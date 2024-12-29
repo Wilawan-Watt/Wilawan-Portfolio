@@ -4,6 +4,7 @@ nav {
   width: 100%;
   box-shadow: 0 0 10px 0 rgba(83, 90, 104, 0.5);
   overflow: hidden;
+  z-index: 99;
 
   a {
     color: #fff;
