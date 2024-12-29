@@ -1,0 +1,54 @@
+.port_con {
+    height: 950px;
+    text-align: center;
+    overflow: hidden;
+    background-color: #21252b;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+        font-size: 40px;
+        text-transform: capitalize;
+        color: #fff;
+    }
+
+    .port_wrap {
+        margin: 50px 30px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 40px;
+
+        img {
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+            object-position: top;
+            border-radius: 20px;
+            margin-bottom: 10px;
+        }
+
+        h3 a {
+            color: #fff;
+
+        &:hover {
+            border-bottom: 2px solid #1ae732;
+        }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .port_con {
+        height: auto;
+
+        h1 {
+            margin: 80px 0 0;
+        }
+
+        .port_wrap {
+            grid-template-columns: 1fr;
+        }
+    }
+}

@@ -1,0 +1,130 @@
+nav {
+  background-color: #21252b;
+  position: fixed;
+  width: 100%;
+  box-shadow: 0 0 10px 0 rgba(83, 90, 104, 0.5);
+  overflow: hidden;
+
+  a {
+    color: #fff;
+    text-transform: capitalize;
+    font-weight: bold;
+  }
+
+  .bars {
+    position: absolute;
+    top: 35px;
+    right: 30px;
+    color: #fff;
+    font-size: 25px;
+  }
+
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+
+    .nav_con {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 55px;
+      margin: 0 20px;
+
+      .logo {
+        font-size: 20px;
+
+        &:hover {
+            text-decoration: underline;
+            text-decoration-color: #1ae732;
+            text-underline-offset: 5px;
+            text-decoration-thickness: 3px;
+        }
+      }
+
+      ul {
+        display: flex;
+
+        li {
+          margin: 0 20px;
+          transition: 0.2s;
+          font-size: 18px;
+
+          &:hover {
+            text-decoration: underline;
+            text-decoration-color: #1ae732;
+            text-underline-offset: 5px;
+            text-decoration-thickness: 3px;
+          }
+        }
+      }
+
+      .button {
+        width: 100px;
+        height: 35px;
+        background-color: #454a5e;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 30px;
+        transition: 0.3s;
+        cursor: pointer;
+
+        &:hover {
+          box-shadow: 0 0 20px 0 rgba(159, 165, 184, 0.5);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .nav_con {
+    flex-direction: column;
+    height: auto !important;
+    margin: 30px 0 !important;
+    align-items: start !important;
+    margin-left: 30px !important;
+
+    ul,
+    .button {
+      display: none !important;
+    }
+  }
+
+  .mobile_menu {
+    li {
+      margin: 30px 50px;
+
+      &:hover {
+        text-decoration: underline;
+        text-decoration-color: #1ae732;
+        text-underline-offset: 5px;
+        text-decoration-thickness: 3px;
+      }
+    }
+  }
+
+  .mobile_button {
+    width: 100px;
+    height: 35px;
+    background-color: #454a5e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    margin-left: 35px;
+    margin-bottom: 20px;
+    transition: 0.3s;
+    cursor: pointer;
+
+    &:hover {
+      box-shadow: 0 0 20px 0 rgba(159, 165, 184, 0.5);
+    }
+  }
+}
+
+@media screen and (min-width: 481px) {
+    .mobile_menu, .bars, .mobile_button {
+        display: none;
+    }
+}
