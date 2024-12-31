@@ -14,12 +14,12 @@ function Skills() {
     <div className={styles.skill_con}>
       <h1>my skills</h1>
       <div className={styles.skill_item}>
-        <li><FaHtml5 /></li>
-        <li><FaCss3Alt /></li>
-        <li><FaJs /></li>
-        <li><FaReact /></li>
-        <li><FaGitAlt /></li>
-        <li><FaFigma /></li>
+        <li><FaHtml5 /><p>HTML5</p></li>
+        <li><FaCss3Alt /><p>CSS3</p></li>
+        <li><FaJs /><p>JavaScript</p></li>
+        <li><FaReact /><p>ReactJS</p></li>
+        <li><FaGitAlt /><p>Git</p></li>
+        <li><FaFigma /><p>Figma</p></li>
       </div>
     </div>
   );
